@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  runner:
+    image: <your-docker-hub-username>/actions-image:latest
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == worker
+    environment:
+      - ORGANIZATION=<YOUR-GITHUB-ORGANIZATION>
+      - ACCESS_TOKEN=<YOUR-GITHUB-ACCESS-TOKEN>
