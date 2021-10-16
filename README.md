@@ -10,7 +10,7 @@ Each image contains CLI , Terraform and Ansible Tools . Any further tool can be 
 
 ## Building Docker image.
 
-1. Run the buil\*.sh script for each Cloud environment
+1. Run the build*.sh script for each Cloud environment
 
 ## Running the Image
 
